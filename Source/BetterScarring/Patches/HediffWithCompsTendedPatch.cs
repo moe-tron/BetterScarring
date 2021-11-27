@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using HarmonyLib;
-using RimWorld;
 using Verse;
 
 namespace BetterScarring.Patches
@@ -20,7 +15,7 @@ namespace BetterScarring.Patches
             {
                 HediffComp_GetsPermanent permComp = __instance.TryGetComp<HediffComp_GetsPermanent>();
                 HediffComp_TendDuration hediffComp_TendDuration = __instance.TryGetComp<HediffComp_TendDuration>();
-                if (!(__instance is Hediff_Injury) || __instance == null || __instance.IsPermanent() || permComp == null || hediffComp_TendDuration == null)
+                if (__instance == null || !(__instance is Hediff_Injury) || __instance.IsPermanent() || permComp == null || hediffComp_TendDuration == null)
                 {
                     return; // patch is not applicable
                 }
