@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- Intended to be used for pawns who like scarring or would respect those w/ scars (pain idealized precept, bloodlust, brawlers, masochists) -->
+  <ThoughtDef>
+    <defName>DisfiguredHonorable</defName>
+    <thoughtClass>Thought_SituationalSocial</thoughtClass>
+    <workerClass>BetterScarring.ThoughtWorker_Disfigured_Honorable</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>scarred</label>
+        <baseOpinionOffset>10</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>
