@@ -30,13 +30,19 @@ namespace BetterScarring.Patches
             }
         }
 
-        // Any tend under 10% will never "cure" the permanentDamageThreshold. The chance to cure increases up to 100% for a 130% cure.
-        // This means that max herbal tend should be ~ 50% chance to "cure".
-        // Normal Medicine should be up to ~ 75% ish and glitterworld will be up to 100%.
+        // Curve for tends curing injuries that will become permanent
+        // Low quality tends up to 20% will never cure the injury.
+        // Max quality herbal tends will have a 10% chance to cure.
+        // Max quality normal meds should be ~55% or so
+        // Max quality glitterworld tends should always cure the injury.
         private static readonly SimpleCurve PermanentDamageThresholdCureCurve = new SimpleCurve
         {
             {
-                new CurvePoint(0.1f, 0.0f),
+                new CurvePoint(0.2f, 0.0f),
+                true
+            },
+            {
+                new CurvePoint(0.7f, 0.1f),
                 true
             },
             {

@@ -6,13 +6,13 @@ namespace BetterScarring
     public static class IdeoUtil
     {
         [MayRequireIdeology]
-        public static readonly PreceptDef Pain_Idealized = DefDatabase<PreceptDef>.GetNamed("Pain_Idealized", true);
+        public static readonly PreceptDef Pain_Idealized = DefDatabase<PreceptDef>.GetNamed("Pain_Idealized", false);
 
         [MayRequireIdeology]
-        public static readonly MemeDef Raider_Meme = DefDatabase<MemeDef>.GetNamed("Raider", true);
+        public static readonly MemeDef Raider_Meme = DefDatabase<MemeDef>.GetNamed("Raider", false);
 
         [MayRequireIdeology]
-        public static readonly MemeDef Cannibal_Meme = DefDatabase<MemeDef>.GetNamed("Cannibal", true);
+        public static readonly MemeDef Cannibal_Meme = DefDatabase<MemeDef>.GetNamed("Cannibal", false);
 
         public static bool hasScarIgnorningMeme(Pawn pawn) {
             return ModsConfig.IdeologyActive && pawn.Ideo != null && pawn.Ideo.HasMeme(Raider_Meme) || pawn.Ideo.HasMeme(Cannibal_Meme);

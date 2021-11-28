@@ -11,10 +11,26 @@
     <li>brrainz.harmony</li>
   </loadAfter>
   <description>
-Makes pawns getting scarred from injuries on external body parts more common but also less severe.
+This mod re-works scarring some and makes it somewhat more realistic.
 
-Permanent injuries on delicate or internal body parts remain just as severe as before.
+Why I made this:
+  - Scarring in rimworld on non-delicate parts is actually pretty uncommon outside of pawn generation except for very severe injuries. In real life you can get a scar from something as simple as falling off a bike.
+  - When scarring does happen it's ridiculously severe; why should a scar render a Pawn's arm almost useless? As someone with a massive scar I rarely ever notice it.
 
-Certain Pawns will also not get the negative "disfigured" opinion of scarred pawns. Some may also get a bonus opinion depending on their traits / ideology.
+Features:
+  - Permanent injuries on skin-covered non-delicate body parts are much more common but less severe.
+  - Permanent injuries on delicate or non skin-covered body parts should remain the same.
+  - Reworks how the "disfigured" thought works, now certain kinds of pawns like scarring on other pawns depending on their traits / ideology.
+  - Adds a chance for good tends to prevent an injury from becoming permanent.
+  - Configurable letting you set the chance that an injury becomes permanent (if it's possible for it to) as well as the ratio for the initial severity to the permanent severity.
+
+Known issues:
+  - Scars that are generated on Pawn generation will stil be relatively severe. I'm not sure if I'm going to try and change that yet.
+
+Compatability:
+  - Should be compatible with all mods.
+  - Should be compatible with added body parts as long as they're setup correctly.
+  - Might not work as intended with damage types that have permanent damage types that are meant to be seriously debilitating - worst case is that the permanent injuries won't be as bad as intended.
+
   </description>
 </ModMetaData>
