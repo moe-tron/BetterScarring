@@ -15,12 +15,12 @@ namespace BetterScarring
         public static readonly MemeDef Cannibal_Meme = DefDatabase<MemeDef>.GetNamed("Cannibal", true);
 
         public static bool hasScarIgnorningMeme(Pawn pawn) {
-            return pawn.Ideo != null && pawn.Ideo.HasMeme(Raider_Meme) || pawn.Ideo.HasMeme(Cannibal_Meme);
+            return ModsConfig.IdeologyActive && pawn.Ideo != null && pawn.Ideo.HasMeme(Raider_Meme) || pawn.Ideo.HasMeme(Cannibal_Meme);
         }
 
         public static bool hasScarLikingPrecept(Pawn pawn)
         {
-            return pawn.Ideo != null && pawn.Ideo.HasPrecept(Pain_Idealized);
+            return ModsConfig.IdeologyActive && pawn.Ideo != null && pawn.Ideo.HasPrecept(Pain_Idealized);
         }
     }
 }
