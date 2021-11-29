@@ -11,7 +11,7 @@ namespace BetterScarring.Patches
 		[HarmonyPrefix]
 		private static bool PreFinalizeInjury(HediffComp_GetsPermanent __instance)
 		{
-			// delicate and non-skin covered parts will bypass this prefix.
+			// delicate and non-skin covered parts will bypass this prefix. Maybe make sure the permanent label contains "scar" and if not bypass?
 			bool skipPrefix = __instance.parent.Part.def.delicate 
 				|| !__instance.parent.Part.def.IsSkinCovered(__instance.parent.Part, __instance.Pawn.health.hediffSet)
 				|| __instance.Pawn.health.hediffSet.PartOrAnyAncestorHasDirectlyAddedParts(__instance.parent.Part);

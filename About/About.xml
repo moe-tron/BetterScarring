@@ -18,7 +18,7 @@ Why I made this:
   - When scarring does happen it's ridiculously severe; why should a scar render a Pawn's arm almost useless? As someone with a massive scar I rarely ever notice it.
 
 Features:
-  - Permanent injuries on skin-covered non-delicate body parts are much more common but less severe.
+  - Permanent injuries on skin-covered non-delicate body parts are much more common but less severe. This applies to parts such as arms, legs, hands, torso, etc.
   - Permanent injuries on delicate or non skin-covered body parts should remain the same.
   - Reworks how the "disfigured" thought works, now certain kinds of pawns like scarring on other pawns depending on their traits / ideology.
   - Adds a chance for good tends to prevent an injury from becoming permanent.
