@@ -12,3 +12,4 @@ Features:
   - High quality tending has a chance to prevent an injury from becoming permanent.
   - Entirely configurable, you can change the chance for injuries to become permanent as well as the ratio of the initial injury severity to the max permanent severity.
   - Permanent injuries on body parts that are either delicate (eyes, brain) or not skin covered (organs, ribs, other bones) remain unchanged.
+  - Changes how some pawns perceive scarred / disfigured pawns. Certain traits / ideos / precepts will either view scars as honorable or not care at all.
